@@ -1,14 +1,17 @@
 * {
+    /* A universal selector, selecting that each element will have no padding or margin at a default. Border box was selected to change the default from the box model. */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
+    /* A pale grey background colour was applied to the body. */
     background-color: #d9dcd6;
 }
 
 header {
+    /* This styles the content within the header tags, a darker background is used here */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -17,15 +20,18 @@ header {
 }
 
 header h1 {
+    /* H1 header was set to inline block, instead of inline/ font size defined */
     display: inline-block;
     font-size: 48px;
 }
 
 header h1 .seo {
+    /* This changes the colour of the span used to style three letters of the company name */
     color: #d9dcd6;
 }
 
 header nav {
+    /* The navigation bar is styled and positioned to the right */
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -34,49 +40,80 @@ header nav {
 }
 
 header nav ul {
+    /* The default bullet points/disc style was removed.  */
     list-style-type: none;
+
 }
 
 header nav ul li {
+    /* The ul and list items sit horizontally due to inline block used */
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
+    /* The anchors are given a white colour. */
     color: #ffffff;
     text-decoration: none;
 }
 
 p {
+    /* All paragraph tags are given a 16px font size  */
     font-size: 16px;
 }
 
-.hero {
+.main-image {
+    /* This class contains the large main image on the page  */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../assets/digital-marketing-meeting.jpg");
+    background-image: url("../assets/images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .float-left {
+    /* The main services section is pushed to the left side */
     float: left;
     margin-right: 25px;
 }
 
 .float-right {
+    /* The aside section is pushed to the right. */
     float: right;
     margin-left: 25px;
 }
 
 main {
+    /* This contains the services information, main content */
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.services {
+    /* This is the structure of the services section, this class is reused three times to create three seperate rectangular blocks for each service */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.services img {
+    /* The images used in the services section are given a maximum height. */
+    max-height: 200px;
+}
+
+.services h2 {
+    /* The h2 heading size within the services section is defined, and a bottom margin is used to create a gap. */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 .benefits {
+    /* This section contains the aside bar of icons, this section defines the size and positioning. */
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -87,41 +124,27 @@ main {
     background-color: #2589bd;
 }
 
-.benefit- {
+/* Each section of the aside bar of icons is styles using the advantages class */
+.advantages {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit- h3 {
+.advantages h3 {
+    /* All three of the h3 headings are centered, and given a bottom margin to create a gap between them. */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit- img {
+.advantages img {
+    /* The icon images sizing and positioned defined. */
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.services {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.services img {
-    max-height: 200px;
-}
-
-.services h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 footer {
+    /* This section styles the footer. */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -129,5 +152,6 @@ footer {
 }
 
 footer h2 {
+    /* The font size of the footer h2 */
     font-size: 20px;
 }
