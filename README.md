@@ -15,4 +15,5 @@ Horiseon is licensed under the MIT license.
 The Horiseon Marketing webpage can be accessed through clicking the link provided below.
 
 ## Deployed webpage link
+https://aliceangelica.github.io/coding-refactor/
 
